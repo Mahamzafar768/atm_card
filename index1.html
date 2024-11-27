@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: brown;
+            padding: 10px 30px;
+        }
+
+        .parent {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 25px;
+            color: white;
+        }
+
+        .nav-link ul {
+            display: flex;
+            list-style: none;
+
+            align-items: center;
+        }
+
+        .nav-link ul li a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 10px 25px;
+            font-size: 20px;
+
+        }
+
+        .nav-link ul li a:hover {
+            text-decoration: underline;
+            background-color: rgb(126, 126, 241);
+        }
+
+        .section1 {
+            background-color: cyan;
+            padding: 10px 30px;
+
+        }
+
+        .parent1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0px;
+        }
+
+        .atm {
+            width: 350px;
+            border: 2px solid black;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        .atm img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .atm p {
+            text-align: center;
+            font-size: 19px;
+            padding: 10px 0px;
+        }
+
+        .atm button {
+            display: block;
+            width: 150px;
+            margin: auto;
+            padding: 5px 0px;
+            font-size: 17px;
+            border: none;
+            border-radius: 8px;
+            transition: all 0.3s;
+        
+        }
+        .atm button:hover{
+            background-color: rgb(126, 126, 214);
+        }
+        .section1 h1{
+            text-align: center;
+            padding: 20px 0px;
+            font-size: 30px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="parent">
+            <div class="logo">
+                <h1>SULEMAN</h1>
+            </div>
+            <div class="nav-link">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- section1 -->
+    <section class="section1">
+        <h1>My projects</h1>
+        <div class="parent1">
+            <div class="atm">
+                <img src="s.jpg" alt="">
+                <p>ATM machine</p>
+                <button>Click me</button>
+            </div>
+            <div class="atm">
+                <img src="s.jpg" alt="">
+                <p>ATM machine</p>
+                <button>Click me</button>
+            </div>
+            <div class="atm">
+                <img src="s.jpg" alt="">
+                <p>ATM machine</p>
+                <button>Click me</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
